@@ -3,8 +3,8 @@ import { Observable, of, range } from 'rxjs';
 import { map, catchError } from 'rxjs/operators';
 import { ajax } from 'rxjs/ajax';
 
-import { GALLERY_SERVICE_GLOBAL_CONFIG, GalleryServiceGlobalConfig } from '../config/app.config';
-import { GalleryItemModel } from '../model/gallery-item.model';
+import { GALLERY_SERVICE_GLOBAL_CONFIG, GalleryServiceGlobalConfig } from './../../config/app.config';
+import { GalleryItemModel } from './../../gallery/model/gallery-item.model';
 
 @Injectable({
   providedIn: 'root'

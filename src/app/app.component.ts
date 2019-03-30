@@ -1,12 +1,12 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { GalleryService } from './services/gallery.service';
+import { GalleryService } from './gallery/service/gallery.service';
 import { Observable } from 'rxjs';
-import { GalleryItemModel } from './model/gallery-item.model';
+import { GalleryItemModel } from './gallery/model/gallery-item.model';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit, OnDestroy {
   photos$: Observable<GalleryItemModel[]>;
