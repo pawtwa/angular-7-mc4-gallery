@@ -1,0 +1,52 @@
+{
+    "id": "photos",
+    "type": "object",
+    "required": [
+      "photos"
+    ],
+    "properties": {
+      "photos": {
+        "type": "array",
+        "minItems": 20,
+        "items": {
+          "type": "object",
+          "required": [
+            "id",
+            "title",
+            "description",
+            "image"
+          ],
+          "properties": {
+            "id": {
+              "chance": {
+                "guid": {}
+              }
+            },
+            "title": {
+              "type": "string",
+              "faker": "commerce.product"
+            },
+            "description": {
+              "chance": {
+                "paragraph": {
+                  "sentences": 1
+                }
+              }
+            },
+            "image": {
+              "chance": {
+                "url": {
+                  "domain": "https://picsum.photos/300/150",
+                  "extensions": [
+                    "gif",
+                    "jpg",
+                    "png"
+                  ]
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
