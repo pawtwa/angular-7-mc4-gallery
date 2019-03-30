@@ -25,3 +25,17 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+## Wymagania
+
++ Pobieranie listy zdjęć z pliku JSON
+   - Zawartość pliku wygenerować za pomocą JSON Schema: https://gist.github.com/piecioshka/da76dc4db6a7cc39a0634327c8f6cef6
++ Prezentacja listy miniaturek
+   - Rozmiary miniatur: 200x133px
+   - Rozmiary powiększonych zdjęć: 600x400px
++ Definiowanie wyglądu za pomocą składni SCSS
+   - Ustawić wygląd miniaturek
+   - Wykorzystać CSS Flexbox do ustawienia komponentu z miniaturkami
++ Po kliknięciu w miniaturkę pojawia się powiększone zdjęcie
+   - Domyślnym dużym zdjęciem jest pierwsze w kolekcji miniaturek
++ Wyróżnić miniaturkę, której widać powiększenie
